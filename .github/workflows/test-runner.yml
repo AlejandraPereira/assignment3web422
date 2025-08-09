@@ -1,0 +1,11 @@
+name: Test Runner
+
+on:
+  workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
+
+jobs:
+  check-runner:
+    runs-on: ubuntu-latest # Puedes cambiarlo a macos-latest o windows-latest si quieres
+    steps:
+      - name: Mostrar directorio actual
+        run: pwd
